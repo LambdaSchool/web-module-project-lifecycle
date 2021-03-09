@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap');
+
+*{
+  margin: 0 auto;
+}
+
+body{
+  background: url("https://i.ibb.co/VCW4VPS/webb.png");
+}
+
+.header{
+  height:4rem;
+  
+  color: goldenrod;
+  text-align: center;
+  background-color: #242424;
+  border-bottom: 2px solid rgb(5, 5, 5);
+  box-shadow: rgb(56, 53, 53) .2rem .3rem 1.5rem ;
+  margin-bottom:4rem;
+  padding:1rem;
+  font-family: 'Crimson Text', serif;
+  font-size:2rem;
+}
+
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: 'Crimson Text', serif;
+  color: goldenrod;
+  max-width: 100rem;
+}
+
+.card{
+  border: 1px solid rgba(255, 255, 255, 0.048);
+  width: 40rem;
+  height: 50rem;
+  background-image: url("https://i.ibb.co/XsRWNh8/pngwing-com-10.png");
+  background-repeat: no-repeat;
+  margin: 2rem;
+  /* position: absolute; */
+}
+
+.intro{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  margin: 12rem 9rem;
+}
+
+.bio{
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  font-size:2rem;
+  color: black;
+}
+
+.myImg{
+  border-radius: 40%;
+  width:22.5rem;
+  height: 17rem;
+  margin-bottom:4rem;
+}
+
+@media screen and (max-width:1300px){
+  .container{
+    display:grid;
+    grid-template-columns:repeat(1, minmax(0,1fr));
+    justify-items:center;
+   }
+  }
+
+
+  
+h2{
+margin-top: 4rem ;
+margin-bottom: 2rem;
+}
+
+a.link{
+color: goldenrod;
+text-shadow: black 1px 1px;
+background:#242424;
+border:black 2px solid;
+box-shadow: rgb(56, 53, 53) 3px 5px 20px ;
+border-radius: 1rem;
+padding:.5rem;
+font-size:1.5rem;
+text-decoration:none;
+}
