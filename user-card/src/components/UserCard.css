@@ -1,0 +1,52 @@
+.container-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.image a img {
+  width: 500px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: red;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  background-color: black;
+  color: white;
+  width: calc(500px - 20px);
+  padding: 10px;
+}
+
+.graph a img {
+  margin-top: 2px;
+  width: calc(500px - 2px);
+  border: 1px solid lightgray;
+}
