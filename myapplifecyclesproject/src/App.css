@@ -1,0 +1,17 @@
+.App {
+  margin: 0rem;
+  text-align: center;
+  background-color:mediumaquamarine;
+}
+
+.card {
+  margin: 4rem;
+  border: dotted green 1rem;
+  background-color:whitesmoke;
+  opacity: 0.5;
+}
+
+.following {
+  margin: 1rem;
+  border: dashed lightgreen;
+}
