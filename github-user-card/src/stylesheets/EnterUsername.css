@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+/* Source for rainbow border that I tweaked "https://codepen.io/mike-schultz/pen/NgQvGO" */
+
+@media only screen and (min-width: 250px) {
+    .gradient-border {
+        display:          flex;
+        flex-direction:   column;
+        align-items:      center;
+        margin: 15% 20%;
+        }
+
+    .enter-username-form {
+        padding:          10%;
+        outline: .5rem solid darkred;
+        text-align:       center;
+        border-radius:    25rem;
+        background-color: rgb(33, 35, 36);
+        filter:           drop-shadow(0 0 10rem rgb(33, 35, 36));
+        }
+
+    .enter-username-header {
+        color:       black;
+        font-family: "Anton", sans-serif;
+        font-size:   2.5rem;
+        text-shadow: -1px 1px 0 antiquewhite,
+                     1px 1px 0 antiquewhite,
+                     1px -1px 0 antiquewhite,
+                     -1px -1px 0 antiquewhite;
+        white-space: pre-wrap;
+        }
+
+    .enter-username-input, .enter-username-submit-btn {
+        width: 75%;
+        margin:    2%;
+        font-family: monospace;
+        font-size: 1.75rem;
+        font-weight: bold;
+        }
+
+    .enter-username-submit-btn {
+        border-radius: 6rem;
+        }
+
+    @keyframes animatedgradient {
+        0% {
+            background-position: 0% 50%;
+            }
+        50% {
+            background-position: 100% 50%;
+            }
+        100% {
+            background-position: 0% 50%;
+            }
+        }
+
+    }
+
+@media only screen and (min-width: 600px) {
+    .gradient-border {
+        --borderWidth:    3rem;
+        background-color: transparent;
+        position:         relative;
+        border-radius:    25rem;
+        }
+
+    .gradient-border:after {
+        content:         "";
+        position:        absolute;
+        top:             calc(-1 * var(--borderWidth));
+        left:            calc(-1 * var(--borderWidth));
+        height:          calc(100% + var(--borderWidth) * 2);
+        width:           calc(100% + var(--borderWidth) * 2);
+        background:      linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+        border-radius:   25rem;
+        z-index:         -1;
+        animation:       animatedgradient 3s ease alternate infinite;
+        background-size: 300% 300%;
+        }
+
+    .enter-username-form {
+        outline: none;
+        }
+
+    .enter-username-header {
+        font-size: 4rem;
+        }
+
+    .enter-username-input, .enter-username-submit-btn {
+        width:     75%;
+        margin:    2%;
+        font-size: 2rem;
+        }
+    }
+
+@media only screen and (min-width: 768px) {
+    .enter-username-form {
+        width: auto;
+        }
+    }
+
+@media only screen and (min-width: 1200px) {
+    .enter-username-header {
+        color: darkgoldenrod;
+        font-size: 6rem;
+        text-shadow: -1px 1px 0 black,
+                     1px 1px 0 black,
+                     1px -1px 0 black,
+                     -1px -1px 0 black;
+        }
+
+    .enter-username-input, .enter-username-submit-btn {
+        width:     66%;
+        margin:    2%;
+        font-size: 2.5rem;
+        }
+    }
+
