@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-image: linear-gradient(
+    #64dfdf,
+    #48bfe3,
+    #1985a1,
+    #5e60ce,
+    #7400b8
+  );
+  box-shadow: 5px 10px 18px #523e5d;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(40px + 4vmin);
+  color: white;
+}
+
+.App-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  margin: 50px;
+  height: 500px;
+  width: 300px;
+  border: 1px solid #78deec;
+  border-radius: 10px;
+  background-image: linear-gradient(#ccfbfb, #64dfdf);
+  box-shadow: 5px 10px 18px #504258;
+}
+
+.follower {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  margin: 20px;
+  height: 500px;
+  width: 300px;
+  border-radius: 10px;
+  background-image: linear-gradient(#ccfbfb, #64dfdf);
+  box-shadow: 5px 10px 18px #504258;
+}
