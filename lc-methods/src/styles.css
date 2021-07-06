@@ -1,0 +1,42 @@
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: aqua;
+  }
+.follower-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.follower {
+display: flex;
+flex-flow: column;
+align-items: center;
+position: relative;
+background-image: linear-gradient(lightyellow, #4eadfa);
+border-radius: 4px;
+height: 200px;
+margin: 8px;
+padding: 16px;
+width: 120px;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.follower-content {
+align-items: center;
+}
+  
+img {
+    height: 80px;
+    width: 80px;
+}
+
+.see-followers {
+    font-weight: bold;
+    color: red;
+}
+  
+  
